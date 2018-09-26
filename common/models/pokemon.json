@@ -1,0 +1,58 @@
+{
+  "name": "Pokemon",
+  "plural": "pokemon",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "pokedexEntry": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "types": {
+      "type": "hasMany",
+      "model": "Type",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true,
+        "disableInclude": true
+      },
+      "through": "PokemonType"
+    },
+    "ability": {
+      "type": "hasOne",
+      "model": "Ability",
+      "foreignKey": "",
+      "options": {
+        "disableInclude": true
+      }
+    },
+    "category": {
+      "type": "hasOne",
+      "model": "Category",
+      "foreignKey": "",
+      "options": {
+        "disableInclude": true
+      }
+    },
+    "nature": {
+      "type": "hasOne",
+      "model": "Nature",
+      "foreignKey": "",
+      "options": {
+        "disableInclude": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

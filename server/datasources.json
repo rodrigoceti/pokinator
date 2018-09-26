@@ -1,0 +1,26 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "knowledge": {
+    "host": "",
+    "port": 0,
+    "url": "",
+    "database": "",
+    "password": "",
+    "name": "knowledge",
+    "user": "",
+    "connector": "mongodb"
+  },
+  "learning": {
+    "host": "",
+    "port": 0,
+    "url": "",
+    "database": "",
+    "password": "",
+    "name": "learning",
+    "user": "",
+    "connector": "mongodb"
+  }
+}
